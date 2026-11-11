@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Вера Кузнецова — портфолио</title>
+<meta name="description" content="Портфолио: дипломы, достижения и проекты">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F6F8;--card:#fff;--ink:#14213D;--muted:#55627A;--line:#D5DDE6;--accent:#2B5FB5;--accent-soft:#E3ECF9}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:17px/1.6 Onest,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.nav{position:sticky;top:0;z-index:5;background:rgba(243,246,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:20px;height:56px}
+.nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:15px}
+.nav a:hover{color:var(--accent)}
+.nav .brand{font-family:Literata,serif;font-weight:700;margin-right:auto}
+.nav .links{display:flex;gap:18px}
+.lang{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:4px 10px;font:600 14px Onest;cursor:pointer;color:var(--ink)}
+.hero{padding:72px 0 56px}
+.hero .grid{display:grid;grid-template-columns:1fr 240px;gap:48px;align-items:center}
+.hero h1{font:700 clamp(38px,7vw,68px)/1.05 Literata,serif;letter-spacing:-.02em}
+.hero .role{font-size:20px;color:var(--muted);margin:16px 0 26px;max-width:34em}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:600;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink)}
+.btn.primary{background:var(--ink);color:#fff}
+.btn:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.photo{aspect-ratio:4/5;border-radius:18px;background:var(--accent-soft) center/cover;border:1px solid var(--line);display:grid;place-items:center;color:var(--muted);font-size:14px;text-align:center;padding:12px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 32px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line)}
+.facts div{font-size:15px;color:var(--muted)}.facts b{display:block;color:var(--ink);font-size:17px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font:700 32px/1.2 Literata,serif;margin-bottom:8px}
+.sub{color:var(--muted);margin-bottom:28px;max-width:40em}
+.about p{max-width:42em;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:6px 14px;font:500 14px Onest;cursor:pointer;color:var(--ink)}
+.chip[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.thumb{aspect-ratio:3/4;background:var(--accent-soft);border:0;padding:0;cursor:zoom-in;display:grid;place-items:center;color:var(--muted);font-size:14px;width:100%;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:contain;display:block}
+.hero .grid.nophoto{grid-template-columns:1fr}
+[hidden]{display:none!important}
+.card .body{padding:16px 18px 18px}
+.card h3{font:700 18px/1.3 Literata,serif;margin-bottom:4px}
+.card .meta{font-size:14px;color:var(--muted)}
+.card p{font-size:15px;margin-top:8px}
+.card a.more{display:inline-block;margin-top:10px;font-weight:600;font-size:15px}
+.projects .card{flex-direction:row}
+.contact ul{list-style:none;padding:0;display:grid;gap:10px}
+.contact li{font-size:18px}.contact span{color:var(--muted);display:inline-block;min-width:120px}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+dialog{border:0;border-radius:14px;padding:0;max-width:min(94vw,980px);width:100%;background:#fff}
+dialog::backdrop{background:rgba(10,18,35,.75)}
+dialog img{display:block;max-width:100%;max-height:78vh;margin:0 auto}
+dialog .cap{padding:14px 20px;display:flex;justify-content:space-between;gap:16px;align-items:center}
+dialog button{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:6px 14px;font:600 14px Onest;cursor:pointer}
+@media(max-width:720px){.hero .grid{grid-template-columns:1fr}.photo{max-width:200px;order:-1}.nav .links{display:none}.hero{padding-top:40px}}
+@media print{.nav,.lang,.chips,dialog{display:none}.card{break-inside:avoid}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="nav"><div class="wrap">
+  <a class="brand" href="#top" id="brand"></a>
+  <nav class="links" id="navlinks"></nav>
+  <button class="lang" id="lang" aria-label="Language">EN</button>
+</div></header>
+
+<main id="top">
+<div class="wrap">
+  <div class="hero"><div class="grid">
+    <div>
+      <h1 id="name"></h1>
+      <p class="role" id="role"></p>
+      <div class="btns" id="heroBtns"></div>
+    </div>
+    <div class="photo" id="photo"></div>
+  </div>
+  <div class="facts" id="facts"></div></div>
+
+  <section class="about" id="about"><h2 id="aboutT"></h2><div id="aboutText"></div></section>
+
+  <section id="awards"><h2 id="awardsT"></h2><p class="sub" id="awardsS"></p>
+    <div class="chips" id="chips"></div><div class="cards" id="awardCards"></div></section>
+
+  <section class="projects" id="projects"><h2 id="projT"></h2><p class="sub" id="projS"></p>
+    <div class="cards" id="projCards"></div></section>
+
+  <section class="contact" id="contact"><h2 id="contT"></h2><ul id="contList"></ul></section>
+</div>
+</main>
+<footer><div class="wrap" id="foot"></div></footer>
+
+<dialog id="dlg"><img id="dlgImg" alt=""><div class="cap"><span id="dlgCap"></span><button id="dlgClose"></button></div></dialog>
+
+<script>
+/* =====================================================================
+   ВСЁ, ЧТО НУЖНО РЕДАКТИРОВАТЬ, — ЗДЕСЬ. Остальной код трогать не надо.
+   ru = по-русски, en = по-английски. Картинки лежат в папке images/
+   ===================================================================== */
+const SITE = {
+  name:   { ru: "Вера Кузнецова", en: "Vera Kuznetsova" },
+  role:   { ru: "",
+            en: "ML Engineer" },
+  photo:  "images/photo.jpg",              // портрет: положите файл photo.jpg в images/ — появится сам. Нет файла — блок скроется
+  facts: [
+    { k: { ru: "Город", en: "City" },            v: { ru: "Москва", en: "Moscow" } },
+    { k: { ru: "Класс", en: "Grade" },           v: { ru: "11 класс", en: "Grade 11" } },
+    { k: { ru: "Интересы", en: "Interests" },    v: { ru: "ML, Big Data, CS", en: "ML, Big Data, CS" } }
+  ],
+  about: {
+    ru: ["Я учусь в 11 классе и увлекаюсь машинным обучением, анализом больших данных и технологиями. Призёр заключительного этапа Национальной технологической олимпиады по профилю «Большие данные и машинное обучение» (2026, командный трек).",
+         "Также я призёр регионального этапа Всероссийской олимпиады школьников по технологии (2025) и призёр регионального конкурса исследовательских и проектных работ «Высший пилотаж» по направлению Computer Science (2025). Ниже можно посмотреть подтверждающие документы."],
+    en: ["I am a grade 11 student interested in machine learning, big data analysis and technology. I am a prize-winner of the National Technology Olympiad in the Big Data and Machine Learning track (2026, team event).",
+         "I am also a prize-winner of the regional stage of the All-Russian School Olympiad in Technology (2025) and of the regional research and project competition “Vysshiy Pilotazh” in Computer Science (2025). The supporting documents are below."]
+  },
+  awards: [
+    { cat: "olymp", year: "2026", img: "images/nto.jpg",
+      title: { ru: "Диплом призёра Национальной технологической олимпиады", en: "Prize-winner diploma, National Technology Olympiad" },
+      org:   { ru: "Профиль «Большие данные и машинное обучение», уровень III, Университет ИТМО (команда «THRILLER»)",
+               en: "Big Data and Machine Learning track, level III, ITMO University (team “THRILLER”)" },
+      link: "" },
+    { cat: "olymp", year: "2025", img: "images/vsosh.jpg",
+      title: { ru: "Почётная грамота призёра регионального этапа ВсОШ по технологии", en: "Certificate of Honour, regional stage of the All-Russian Olympiad in Technology" },
+      org:   { ru: "Министерство образования и науки Хабаровского края",
+               en: "Ministry of Education and Science of Khabarovsk Krai" },
+      link: "" },
+    { cat: "research", year: "2025", img: "images/pilotazh.jpg",
+      title: { ru: "Диплом призёра конкурса «Высший пилотаж — Хабаровск», Computer Science", en: "Prize-winner diploma, “Vysshiy Pilotazh – Khabarovsk”, Computer Science" },
+      org:   { ru: "Конкурс исследовательских и проектных работ школьников, Олимпиады Вышки (НИУ ВШЭ)",
+               en: "Research and project competition for school students, HSE Olympiads" },
+      link: "" }
+  ],
+  cats: { olymp: { ru: "Олимпиады", en: "Olympiads" },
+          research: { ru: "Исследовательские конкурсы", en: "Research competitions" } },
+  projects: [],   /* Проектов пока нет — раздел скрыт. Добавите проект: { img, link, file, title:{ru,en}, text:{ru,en} } */
+  contacts: [
+    { k: { ru: "Email", en: "Email" }, v: "email@example.com", href: "mailto:email@example.com" },
+    { k: { ru: "Telegram", en: "Telegram" }, v: "@username", href: "https://t.me/username" }
+  ]
+};
+
+const UI = {
+  ru: { nav: ["О себе","Достижения","Проекты","Контакты"], all: "Все", about: "О себе",
+        awards: "Достижения", awardsS: "Нажмите на документ, чтобы открыть его в полном размере.",
+        proj: "Проекты", projS: "Исследовательские и творческие работы.", cont: "Контакты",
+        contact: "Связаться", dl: "Смотреть достижения", noimg: "Здесь будет скан документа", noph: "Здесь будет фото",
+        close: "Закрыть", more: "Подтверждение", file: "Открыть работу (PDF)", link: "Ссылка на проект", foot: "Портфолио" },
+  en: { nav: ["About","Achievements","Projects","Contact"], all: "All", about: "About me",
+        awards: "Achievements", awardsS: "Click a document to view it in full size.",
+        proj: "Projects", projS: "Research and creative work.", cont: "Contact",
+        contact: "Contact me", dl: "See achievements", noimg: "Document scan goes here", noph: "Photo goes here",
+        close: "Close", more: "Verification", file: "Open the work (PDF)", link: "Project link", foot: "Portfolio" }
+};
+
+/* ------------------------ код сайта ------------------------ */
+let L = (new URLSearchParams(location.search).get("lang") || localStorage.getItem("lang") || ((navigator.language||"").startsWith("ru") ? "ru" : "en"));
+if (!UI[L]) L = "ru";
+let cat = "all";
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function render() {
+  const u = UI[L], S = SITE;
+  document.documentElement.lang = L;
+  document.title = S.name[L] + " — " + u.foot.toLowerCase();
+  $("lang").textContent = L === "ru" ? "EN" : "RU";
+  $("brand").textContent = S.name[L];
+  const ids = ["about","awards","projects","contact"];
+  const hasProj = S.projects.length > 0;
+  $("projects").hidden = !hasProj;
+  $("navlinks").innerHTML = ids.map((id,i) => (id==="projects" && !hasProj) ? "" : `<a href="#${id}">${u.nav[i]}</a>`).join("");
+  $("name").textContent = S.name[L];
+  $("role").textContent = S.role[L];
+  $("heroBtns").innerHTML = `<a class="btn primary" href="#awards">${u.dl}</a><a class="btn" href="#contact">${u.contact}</a>`;
+  const ph = $("photo");
+  ph.hidden = true; ph.style.backgroundImage = ""; ph.closest(".grid").classList.add("nophoto");
+  const im = new Image(); im.onload = () => { ph.hidden = false; ph.closest(".grid").classList.remove("nophoto"); ph.style.backgroundImage = `url("${S.photo}")`; }; im.src = S.photo;
+  $("facts").innerHTML = S.facts.map(f => `<div>${esc(f.k[L])}<b>${esc(f.v[L])}</b></div>`).join("");
+  $("aboutT").textContent = u.about;
+  $("aboutText").innerHTML = S.about[L].map(p => `<p>${esc(p)}</p>`).join("");
+
+  $("awardsT").textContent = u.awards; $("awardsS").textContent = u.awardsS;
+  const cats = ["all", ...Object.keys(S.cats)];
+  $("chips").innerHTML = cats.map(c => `<button class="chip" data-c="${c}" aria-pressed="${c===cat}">${c==="all"?u.all:esc(S.cats[c][L])}</button>`).join("");
+  $("awardCards").innerHTML = S.awards.map((a,i) => ({a,i})).filter(({a}) => cat==="all" || a.cat===cat).map(({a,i}) => `
+    <article class="card">
+      <button class="thumb" data-i="${i}" aria-label="${esc(a.title[L])}">${thumb(a.img,u.noimg)}</button>
+      <div class="body"><h3>${esc(a.title[L])}</h3>
+        <div class="meta">${esc(a.org[L])} · ${esc(a.year)}</div>
+        ${a.link ? `<a class="more" href="${esc(a.link)}" target="_blank" rel="noopener">${u.more}</a>` : ""}
+      </div></article>`).join("");
+
+  $("projT").textContent = u.proj; $("projS").textContent = u.projS;
+  $("projCards").innerHTML = S.projects.map(p => `
+    <article class="card" style="grid-column:1/-1;flex-direction:row;flex-wrap:wrap">
+      <div class="thumb" style="cursor:default;flex:1 1 260px;aspect-ratio:auto;min-height:200px">${thumb(p.img,u.noimg)}</div>
+      <div class="body" style="flex:2 1 300px"><h3>${esc(p.title[L])}</h3><p>${esc(p.text[L])}</p>
+        ${p.file ? `<a class="more" href="${esc(p.file)}" target="_blank" rel="noopener">${u.file}</a><br>` : ""}
+        ${p.link ? `<a class="more" href="${esc(p.link)}" target="_blank" rel="noopener">${u.link}</a>` : ""}
+      </div></article>`).join("");
+
+  $("contT").textContent = u.cont;
+  $("contList").innerHTML = S.contacts.map(c => `<li><span>${esc(c.k[L])}</span><a href="${esc(c.href)}">${esc(c.v)}</a></li>`).join("");
+  $("foot").textContent = `© ${new Date().getFullYear()} ${S.name[L]}`;
+  $("dlgClose").textContent = u.close;
+}
+function thumb(src, fallback) {
+  return `<img src="${esc(src)}" alt="" loading="lazy" onerror="this.replaceWith(document.createTextNode('${fallback}'))">`;
+}
+
+document.addEventListener("click", e => {
+  const chip = e.target.closest(".chip"); if (chip) { cat = chip.dataset.c; render(); return; }
+  const t = e.target.closest(".thumb[data-i]");
+  if (t) {
+    const a = SITE.awards[t.dataset.i];
+    $("dlgImg").src = a.img; $("dlgImg").alt = a.title[L];
+    $("dlgCap").textContent = a.title[L] + " — " + a.org[L] + ", " + a.year;
+    $("dlg").showModal();
+  }
+});
+$("dlgClose").onclick = () => $("dlg").close();
+$("dlg").addEventListener("click", e => { if (e.target === $("dlg")) $("dlg").close(); });
+$("lang").onclick = () => { L = L === "ru" ? "en" : "ru"; try { localStorage.setItem("lang", L); } catch(e){} render(); };
+render();
+</script>
+</body>
+</html>
