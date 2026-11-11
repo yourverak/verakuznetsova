@@ -112,12 +112,11 @@ const SITE = {
             en: "ML Engineer" },
   photo:  "images/photo.jpg",              // портрет: положите файл photo.jpg в images/ — появится сам. Нет файла — блок скроется
   facts: [
-    { k: { ru: "Город", en: "City" },            v: { ru: "Москва", en: "Moscow" } },
-    { k: { ru: "Класс", en: "Grade" },           v: { ru: "11 класс", en: "Grade 11" } },
+    { k: { ru: "Город", en: "City" },            v: { ru: "Хабаровск", en: "Khabarovsk" } },
     { k: { ru: "Интересы", en: "Interests" },    v: { ru: "ML, Big Data, CS", en: "ML, Big Data, CS" } }
   ],
   about: {
-    ru: ["Я учусь в 11 классе и увлекаюсь машинным обучением, анализом больших данных и технологиями. Призёр заключительного этапа Национальной технологической олимпиады по профилю «Большие данные и машинное обучение» (2026, командный трек).",
+    ru: ["Я увлекаюсь машинным обучением, анализом больших данных и технологиями. Призёр заключительного этапа Национальной технологической олимпиады по профилю «Большие данные и машинное обучение» (2026, командный трек).",
          "Также я призёр регионального этапа Всероссийской олимпиады школьников по технологии (2025) и призёр регионального конкурса исследовательских и проектных работ «Высший пилотаж» по направлению Computer Science (2025). Ниже можно посмотреть подтверждающие документы."],
     en: ["I am a grade 11 student interested in machine learning, big data analysis and technology. I am a prize-winner of the National Technology Olympiad in the Big Data and Machine Learning track (2026, team event).",
          "I am also a prize-winner of the regional stage of the All-Russian School Olympiad in Technology (2025) and of the regional research and project competition “Vysshiy Pilotazh” in Computer Science (2025). The supporting documents are below."]
@@ -125,11 +124,36 @@ const SITE = {
   awards: [
     { cat: "olymp", year: "2026", img: "images/nto.jpg",
       title: { ru: "Диплом призёра Национальной технологической олимпиады", en: "Prize-winner diploma, National Technology Olympiad" },
-      org:   { ru: "Профиль «Большие данные и машинное обучение», уровень III, Университет ИТМО (команда «THRILLER»)",
-               en: "Big Data and Machine Learning track, level III, ITMO University (team “THRILLER”)" },
+      org:   { ru: "Профиль «Большие данные и машинное обучение», Университет ИТМО (команда «THRILLEЯ»)",
+               en: "Big Data and Machine Learning track, ITMO University (team “THRILLEЯ”)" },
       link: "" },
+
+    { cat: "olymp", year: "2025", img: "images/Диплом победителя хакатона по анализу данных DANO.jpeg",
+      title: { ru: "Диплом победителя Национального хакатона по Анализу данных", en: "Winner diploma, National Data Analysis Hackathon" },
+      org:   { ru: "Профиль «Анализ данных», Университет ВШЭ",
+               en: "Data Analysis track, HSE University" },
+      link: "" },
+
+    { cat: "olymp", year: "2025", img: "verakuznetsova/images/Открытый тур по информаторе Яндекс учебник - 2 место.jpg",
+      title: { ru: "Диплом победителя открытой олимпиады по информатике от Яндекса", en: "Winner diploma, Open Olympiad in Computer Science, Yandex" },
+      org:   { ru: "Информатика,Яндекс",
+               en: "Computer Science, Yandex" },
+      link: "" },
+
+    { cat: "olymp", year: "2025", img: "verakuznetsova/images/Диплом призера региона больших вызовов.jpeg",
+      title: { ru: "Диплом призера всероссийской олимпиады Большие вызовы - направление 'большие данные и машинное обучение'", en: "Prize-winner diploma, All-Russian Olympiad in Big Data and Machine Learning" },
+      org:   { ru: "Большие данные и машинное обучение, Сириус",
+               en: "Big Data and Machine Learning, Sirius" },
+      link: "" },
+
+    { cat: "olymp", year: "2025", img: "verakuznetsova/images/Хакатон МИФИ - 3 место.png",
+      title: { ru: "Хакатон МИФИ - 3 место", en: "Hackathon at MIFI - 3rd place" },
+      org:   { ru: "Компьютерное зрение, МИФИ",
+               en: "Computer Vision, MIFI" },
+      link: "" },
+
     { cat: "olymp", year: "2025", img: "images/vsosh.jpg",
-      title: { ru: "Почётная грамота призёра регионального этапа ВсОШ по технологии", en: "Certificate of Honour, regional stage of the All-Russian Olympiad in Technology" },
+      title: { ru: "Почётная грамота призёра регионального этапа ВсОШ по технологии", en: "Certificate of Honour, prize-winner of the regional stage of the All-Russian Olympiad in Technology" },
       org:   { ru: "Министерство образования и науки Хабаровского края",
                en: "Ministry of Education and Science of Khabarovsk Krai" },
       link: "" },
@@ -143,8 +167,9 @@ const SITE = {
           research: { ru: "Исследовательские конкурсы", en: "Research competitions" } },
   projects: [],   /* Проектов пока нет — раздел скрыт. Добавите проект: { img, link, file, title:{ru,en}, text:{ru,en} } */
   contacts: [
-    { k: { ru: "Email", en: "Email" }, v: "email@example.com", href: "mailto:email@example.com" },
-    { k: { ru: "Telegram", en: "Telegram" }, v: "@username", href: "https://t.me/username" }
+    { k: { ru: "Email", en: "Email" }, v: "vkuznetsovastudy@gmail.com", href: "mailto:vkuznetsovastudy@gmail.com" },
+    { k: { ru: "Telegram", en: "Telegram" }, v: "@ilythy", href: "https://t.me/ilythy" },
+    { k: { ru: "LinkedIn", en: "LinkedIn" }, v: "@vera-kuznetsova-146b38445", href: "https://www.linkedin.com/in/vera-kuznetsova-146b38445/" }
   ]
 };
 
